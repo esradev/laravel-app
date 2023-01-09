@@ -6,7 +6,8 @@
           <p class="lead text-muted">Are you sick of short tweets and impersonal &ldquo;shared&rdquo; posts that are reminiscent of the late 90&rsquo;s email forwards? We believe getting back to actually writing is the key to enjoying the internet again.</p>
         </div>
         <div class="col-lg-5 pl-lg-5 pb-3 py-lg-5">
-          <form action="#" method="POST" id="registration-form">
+          <form action="/register" method="POST" id="registration-form">
+            @csrf
             <div class="form-group">
               <label for="username-register" class="text-muted mb-1"><small>Username</small></label>
               <input name="username" id="username-register" class="form-control" type="text" placeholder="Pick a username" autocomplete="off" />
