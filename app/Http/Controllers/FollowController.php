@@ -20,7 +20,6 @@ class FollowController extends Controller
             return back()->with('failure', 'You are already following that user..');
         }
 
-
         $newFollow = new Follow;
         $newFollow->user_id = auth()->user()->id;
         $newFollow->followeduser = $user->id;
